@@ -18,5 +18,5 @@ RUN pip install -r requirements.txt
 
 
 CMD ["python", "/s3-app/app/main.py"]
-
+# CMD sleep 12312312
 # docker exec -it 78740d05  bash

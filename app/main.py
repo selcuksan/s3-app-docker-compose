@@ -10,8 +10,9 @@ S3_REGION = os.environ["S3_REGION"]
 ACCESS_KEY = os.environ["ACCESS_KEY"]
 SECRET_KEY = os.environ["SECRET_KEY"]
 S3_ENDPOINT = os.environ["S3_ENDPOINT"]
+# http://127.0.0.1:9000
 BUCKET_NAME = os.environ["BUCKET_NAME"]
-UPLOAD_FOLDER = os.environ["UPLOAD_FOLDER"]
+UPLOAD_FOLDER = "/s3-app/downloads/" #os.environ["UPLOAD_FOLDER"]
 
 # Flask uygulamasının ayarları
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -72,13 +73,12 @@ def list_files():
 @app.route('/download/<filename>')
 def download_file(filename):
     s3 = create_session(ACCESS_KEY, SECRET_KEY, S3_ENDPOINT)
-    print(filename)
     try:
-        s3.download_file(BUCKET_NAME, filename, f"../downloads/{filename}")
-        return
+        local_file_path = os.path.join(UPLOAD_FOLDER, filename)
+        s3.download_file(BUCKET_NAME, filename, local_file_path)
+        return send_from_directory(UPLOAD_FOLDER, filename)
     except Exception as err:
-        return "Dosya Bulunamadı"
-
+        return f"Dosya İndirme Hatası: {str(err)}"
 
 @app.route('/delete/<filename>')
 def delete_file(filename):

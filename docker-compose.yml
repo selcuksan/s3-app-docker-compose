@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   minio-app:
     container_name: minio-app
@@ -8,7 +8,8 @@ services:
       MINIO_ROOT_USER: "MR_ROBOT_IS_ALIVE"
       MINIO_ROOT_PASSWORD: "MR_ROBOT_SECRET_PASS"
     volumes:
-      - C:\Users\selcu\OneDrive\Masaüstü\Turk-Telekom\paas\s3-app\minio-app:/data
+      # - C:\Users\selcu\OneDrive\Masaüstü\Turk-Telekom\paas\s3-app\minio-app:/data
+      - ./minio-app:/data
     ports:
       - 9000:9000
       - 9001:9001
@@ -19,8 +20,8 @@ services:
     container_name: python-app
     environment:
       S3_REGION: "eu-central-1"
-      ACCESS_KEY: 'MY_APP_SUPER_ACCESS'
-      SECRET_KEY: 'MY_APP_SUPER_SECRET'
+      ACCESS_KEY: "MY_APP_SUPER_ACCESS"
+      SECRET_KEY: "MY_APP_SUPER_SECRET"
       S3_ENDPOINT: "http://minio-app:9000"
       BUCKET_NAME: "mybucket1"
       UPLOAD_FOLDER: ""
@@ -29,7 +30,8 @@ services:
     depends_on:
       - minio-app
     volumes:
-      - C:\Users\selcu\OneDrive\Masaüstü\Turk-Telekom\paas\s3-app:/s3-app
+      # - C:\Users\selcu\OneDrive\Masaüstü\Turk-Telekom\paas\s3-app:/s3-app
+      - .:/s3-app
     networks:
       - my-network
 networks:

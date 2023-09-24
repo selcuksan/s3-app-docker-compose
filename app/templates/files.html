@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>File Upload and Management</title>
     <style>
-          body {
+      body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
@@ -132,10 +132,9 @@
 
         <li>
           <a
-            href="{{ url_for('download_file', filename=file['Key']) }}"
-            download
-            >{{ file['Key'] }} - {{ file['Size'] // (1024*1024) }} MB</a
-          >
+            href="{{ url_for('download_file', filename=file['Key']) }}"target="_blank"
+            >{{ file['Key'] }}
+          </a>
           <a href="{{ url_for('delete_file', filename=file['Key']) }}">
             <b>Delete</b></a
           >
