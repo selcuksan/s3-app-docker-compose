@@ -1,0 +1,1266 @@
+{
+  "version": "2",
+  "timestamp": "0001-01-01T00:00:00.000Z",
+  "sys": {
+    "cpus": [
+      {
+        "addr": "server1",
+        "cpus": [
+          {
+            "vendor_id": "GenuineIntel",
+            "family": "6",
+            "model": "140",
+            "stepping": 1,
+            "physical_id": "0",
+            "model_name": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+            "mhz": 2803.199,
+            "cache_size": 12288,
+            "flags": [
+              "fpu",
+              "vme",
+              "de",
+              "pse",
+              "tsc",
+              "msr",
+              "pae",
+              "mce",
+              "cx8",
+              "apic",
+              "sep",
+              "mtrr",
+              "pge",
+              "mca",
+              "cmov",
+              "pat",
+              "pse36",
+              "clflush",
+              "mmx",
+              "fxsr",
+              "sse",
+              "sse2",
+              "ss",
+              "ht",
+              "syscall",
+              "nx",
+              "pdpe1gb",
+              "rdtscp",
+              "lm",
+              "constant_tsc",
+              "rep_good",
+              "nopl",
+              "xtopology",
+              "tsc_reliable",
+              "nonstop_tsc",
+              "cpuid",
+              "pni",
+              "pclmulqdq",
+              "ssse3",
+              "fma",
+              "cx16",
+              "pcid",
+              "sse4_1",
+              "sse4_2",
+              "movbe",
+              "popcnt",
+              "aes",
+              "xsave",
+              "avx",
+              "f16c",
+              "rdrand",
+              "hypervisor",
+              "lahf_lm",
+              "abm",
+              "3dnowprefetch",
+              "invpcid_single",
+              "ssbd",
+              "ibrs",
+              "ibpb",
+              "stibp",
+              "ibrs_enhanced",
+              "fsgsbase",
+              "bmi1",
+              "avx2",
+              "smep",
+              "bmi2",
+              "erms",
+              "invpcid",
+              "avx512f",
+              "avx512dq",
+              "rdseed",
+              "adx",
+              "smap",
+              "avx512ifma",
+              "clflushopt",
+              "clwb",
+              "avx512cd",
+              "sha_ni",
+              "avx512bw",
+              "avx512vl",
+              "xsaveopt",
+              "xsavec",
+              "xgetbv1",
+              "xsaves",
+              "avx512vbmi",
+              "umip",
+              "avx512_vbmi2",
+              "gfni",
+              "vaes",
+              "vpclmulqdq",
+              "avx512_vnni",
+              "avx512_bitalg",
+              "avx512_vpopcntdq",
+              "rdpid",
+              "fsrm",
+              "avx512_vp2intersect",
+              "flush_l1d",
+              "arch_capabilities"
+            ],
+            "microcode": "0xffffffff",
+            "cores": 8
+          }
+        ]
+      }
+    ],
+    "partitions": [
+      {
+        "addr": "server1",
+        "partitions": [
+          {
+            "device": "/dev/sdc",
+            "mountpoint": "/etc/resolv.conf",
+            "fs_type": "ext4",
+            "mount_options": "rw,relatime,bind",
+            "mount_fs_type": "ext2/ext3",
+            "space_total": 269490393088,
+            "space_free": 228534398976,
+            "inode_total": 16777216,
+            "inode_free": 15955591
+          },
+          {
+            "device": "/dev/sdc",
+            "mountpoint": "/etc/hostname",
+            "fs_type": "ext4",
+            "mount_options": "rw,relatime,bind",
+            "mount_fs_type": "ext2/ext3",
+            "space_total": 269490393088,
+            "space_free": 228534398976,
+            "inode_total": 16777216,
+            "inode_free": 15955591
+          },
+          {
+            "device": "/dev/sdc",
+            "mountpoint": "/etc/hosts",
+            "fs_type": "ext4",
+            "mount_options": "rw,relatime,bind",
+            "mount_fs_type": "ext2/ext3",
+            "space_total": 269490393088,
+            "space_free": 228534398976,
+            "inode_total": 16777216,
+            "inode_free": 15955591
+          }
+        ]
+      }
+    ],
+    "osinfo": [
+      {
+        "addr": "server1",
+        "info": {
+          "hostname": "fc3640654c45",
+          "uptime": 45047,
+          "bootTime": 1695456446,
+          "procs": 1,
+          "os": "linux",
+          "platform": "redhat",
+          "platformFamily": "rhel",
+          "platformVersion": "8.5",
+          "kernelVersion": "5.10.16.3-microsoft-standard-WSL2",
+          "kernelArch": "x86_64",
+          "virtualizationSystem": "docker",
+          "virtualizationRole": "guest",
+          "hostId": "b71d52da-60f9-40ff-bbfb-3cf5eaa76898"
+        }
+      }
+    ],
+    "meminfo": [
+      {
+        "addr": "server1",
+        "total": 8342986752,
+        "available": 6258503680,
+        "swap_space_total": 2147483648,
+        "swap_space_free": 2131943424
+      }
+    ],
+    "procinfo": [
+      {
+        "addr": "server1",
+        "pid": 1,
+        "is_background": true,
+        "cpu_percent": 2.8955954197680978,
+        "cmd_line": "server1mserver1iserver1nserver1iserver1oserver1 server1sserver1eserver1rserver1vserver1eserver1rserver1 server1/server1dserver1aserver1tserver1aserver1 server1-server1-server1cserver1oserver1nserver1sserver1oserver1lserver1eserver1-server1aserver1dserver1dserver1rserver1eserver1sserver1sserver1 server1:server19server10server10server11server1",
+        "num_connections": 9,
+        "create_time": 1695501436000,
+        "cwd": "/",
+        "exec_path": "/opt/bin/minio",
+        "gids": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "iocounters": {
+          "readCount": 988,
+          "writeCount": 559,
+          "readBytes": 8192,
+          "writeBytes": 0
+        },
+        "is_running": true,
+        "mem_info": {
+          "rss": 283877376,
+          "vms": 1042313216,
+          "hwm": 0,
+          "data": 0,
+          "stack": 0,
+          "locked": 0,
+          "swap": 0
+        },
+        "mem_maps": [
+          {
+            "path": "",
+            "rss": 280788,
+            "size": 1017884,
+            "pss": 280784,
+            "sharedClean": 4,
+            "sharedDirty": 0,
+            "privateClean": 55372,
+            "privateDirty": 225412,
+            "referenced": 272004,
+            "anonymous": 225412,
+            "swap": 0
+          }
+        ],
+        "mem_percent": 3.402587,
+        "name": "minio",
+        "nice": 20,
+        "num_ctx_switches": {
+          "voluntary": 196,
+          "involuntary": 1
+        },
+        "num_fds": 17,
+        "num_threads": 14,
+        "page_faults": {
+          "minorFaults": 53884,
+          "majorFaults": 0,
+          "childMinorFaults": 0,
+          "childMajorFaults": 0
+        },
+        "status": "sleep",
+        "tgid": 1,
+        "times": {
+          "cpu": "cpu",
+          "user": 0.68,
+          "system": 0.97,
+          "idle": 0,
+          "nice": 0,
+          "iowait": 0,
+          "irq": 0,
+          "softirq": 0,
+          "steal": 0,
+          "guest": 0,
+          "guestNice": 0
+        },
+        "uids": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "username": "root"
+      }
+    ]
+  },
+  "perf": {
+    "drives": [
+      {
+        "addr": "server1",
+        "serial_perf": [
+          {
+            "path": "/data",
+            "latency": {
+              "avg": 0.013,
+              "max": 0.038,
+              "min": 0.011,
+              "percentile_50": 0.012,
+              "percentile_90": 0.016,
+              "percentile_99": 0.03
+            },
+            "throughput": {
+              "avg": 326675237,
+              "max": 388262510,
+              "min": 110375047,
+              "percentile_50": 347162861,
+              "percentile_90": 376930517,
+              "percentile_99": 388215206
+            }
+          }
+        ],
+        "parallel_perf": [
+          {
+            "path": "/data",
+            "latency": {
+              "avg": 0.017,
+              "max": 0.021,
+              "min": 0.015,
+              "percentile_50": 0.016,
+              "percentile_90": 0.017,
+              "percentile_99": 0.02
+            },
+            "throughput": {
+              "avg": 254606855,
+              "max": 272745427,
+              "min": 201158684,
+              "percentile_50": 255468932,
+              "percentile_90": 265458960,
+              "percentile_99": 271773048
+            }
+          }
+        ]
+      }
+    ],
+    "net_parallel": {
+      "addr": ""
+    }
+  },
+  "minio": {
+    "config": {
+      "config": {
+        "api": {
+          "_": [
+            {
+              "key": "requests_max",
+              "value": "0"
+            },
+            {
+              "key": "requests_deadline",
+              "value": "10s"
+            },
+            {
+              "key": "cluster_deadline",
+              "value": "10s"
+            },
+            {
+              "key": "cors_allow_origin",
+              "value": "*"
+            },
+            {
+              "key": "remote_transport_deadline",
+              "value": "2h"
+            },
+            {
+              "key": "list_quorum",
+              "value": "strict"
+            },
+            {
+              "key": "replication_workers",
+              "value": "250"
+            },
+            {
+              "key": "replication_failed_workers",
+              "value": "8"
+            },
+            {
+              "key": "transition_workers",
+              "value": "100"
+            },
+            {
+              "key": "stale_uploads_cleanup_interval",
+              "value": "6h"
+            },
+            {
+              "key": "stale_uploads_expiry",
+              "value": "24h"
+            },
+            {
+              "key": "delete_cleanup_interval",
+              "value": "5m"
+            },
+            {
+              "key": "disable_odirect",
+              "value": "off"
+            }
+          ]
+        },
+        "audit_kafka": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "topic",
+              "value": ""
+            },
+            {
+              "key": "brokers",
+              "value": ""
+            },
+            {
+              "key": "sasl_username",
+              "value": ""
+            },
+            {
+              "key": "sasl_password",
+              "value": ""
+            },
+            {
+              "key": "sasl_mechanism",
+              "value": "plain"
+            },
+            {
+              "key": "client_tls_cert",
+              "value": ""
+            },
+            {
+              "key": "client_tls_key",
+              "value": ""
+            },
+            {
+              "key": "tls_client_auth",
+              "value": "0"
+            },
+            {
+              "key": "sasl",
+              "value": "off"
+            },
+            {
+              "key": "tls",
+              "value": "off"
+            },
+            {
+              "key": "tls_skip_verify",
+              "value": "off"
+            },
+            {
+              "key": "version",
+              "value": ""
+            }
+          ]
+        },
+        "audit_webhook": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "endpoint",
+              "value": ""
+            },
+            {
+              "key": "auth_token",
+              "value": ""
+            },
+            {
+              "key": "client_cert",
+              "value": ""
+            },
+            {
+              "key": "client_key",
+              "value": ""
+            },
+            {
+              "key": "queue_size",
+              "value": "100000"
+            }
+          ]
+        },
+        "cache": {
+          "_": [
+            {
+              "key": "drives",
+              "value": ""
+            },
+            {
+              "key": "exclude",
+              "value": ""
+            },
+            {
+              "key": "expiry",
+              "value": "90"
+            },
+            {
+              "key": "quota",
+              "value": "80"
+            },
+            {
+              "key": "after",
+              "value": "0"
+            },
+            {
+              "key": "watermark_low",
+              "value": "70"
+            },
+            {
+              "key": "watermark_high",
+              "value": "80"
+            },
+            {
+              "key": "range",
+              "value": "on"
+            },
+            {
+              "key": "commit",
+              "value": ""
+            }
+          ]
+        },
+        "compression": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "allow_encryption",
+              "value": "off"
+            },
+            {
+              "key": "extensions",
+              "value": ".txt,.log,.csv,.json,.tar,.xml,.bin"
+            },
+            {
+              "key": "mime_types",
+              "value": "text/*,application/json,application/xml,binary/octet-stream"
+            }
+          ]
+        },
+        "credentials": {},
+        "etcd": {
+          "_": [
+            {
+              "key": "endpoints",
+              "value": ""
+            },
+            {
+              "key": "path_prefix",
+              "value": ""
+            },
+            {
+              "key": "coredns_path",
+              "value": "/skydns"
+            },
+            {
+              "key": "client_cert",
+              "value": ""
+            },
+            {
+              "key": "client_cert_key",
+              "value": ""
+            }
+          ]
+        },
+        "heal": {
+          "_": [
+            {
+              "key": "bitrotscan",
+              "value": "off"
+            },
+            {
+              "key": "max_sleep",
+              "value": "1s"
+            },
+            {
+              "key": "max_io",
+              "value": "100"
+            }
+          ]
+        },
+        "identity_ldap": {
+          "_": [
+            {
+              "key": "server_addr",
+              "value": ""
+            },
+            {
+              "key": "user_dn_search_base_dn",
+              "value": ""
+            },
+            {
+              "key": "user_dn_search_filter",
+              "value": ""
+            },
+            {
+              "key": "group_search_filter",
+              "value": ""
+            },
+            {
+              "key": "group_search_base_dn",
+              "value": ""
+            },
+            {
+              "key": "tls_skip_verify",
+              "value": "off"
+            },
+            {
+              "key": "server_insecure",
+              "value": "off"
+            },
+            {
+              "key": "server_starttls",
+              "value": "off"
+            },
+            {
+              "key": "lookup_bind_dn",
+              "value": ""
+            },
+            {
+              "key": "lookup_bind_password",
+              "value": ""
+            }
+          ]
+        },
+        "identity_openid": {
+          "_": [
+            {
+              "key": "config_url",
+              "value": ""
+            },
+            {
+              "key": "client_id",
+              "value": ""
+            },
+            {
+              "key": "client_secret",
+              "value": ""
+            },
+            {
+              "key": "claim_name",
+              "value": "policy"
+            },
+            {
+              "key": "claim_userinfo",
+              "value": ""
+            },
+            {
+              "key": "role_policy",
+              "value": ""
+            },
+            {
+              "key": "claim_prefix",
+              "value": ""
+            },
+            {
+              "key": "redirect_uri",
+              "value": ""
+            },
+            {
+              "key": "redirect_uri_dynamic",
+              "value": "off"
+            },
+            {
+              "key": "scopes",
+              "value": ""
+            }
+          ]
+        },
+        "identity_tls": {
+          "_": [
+            {
+              "key": "skip_verify",
+              "value": "off"
+            }
+          ]
+        },
+        "logger_webhook": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "endpoint",
+              "value": ""
+            },
+            {
+              "key": "auth_token",
+              "value": ""
+            },
+            {
+              "key": "client_cert",
+              "value": ""
+            },
+            {
+              "key": "client_key",
+              "value": ""
+            },
+            {
+              "key": "queue_size",
+              "value": "100000"
+            }
+          ]
+        },
+        "notify_amqp": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "url",
+              "value": ""
+            },
+            {
+              "key": "exchange",
+              "value": ""
+            },
+            {
+              "key": "exchange_type",
+              "value": ""
+            },
+            {
+              "key": "routing_key",
+              "value": ""
+            },
+            {
+              "key": "mandatory",
+              "value": "off"
+            },
+            {
+              "key": "durable",
+              "value": "off"
+            },
+            {
+              "key": "no_wait",
+              "value": "off"
+            },
+            {
+              "key": "internal",
+              "value": "off"
+            },
+            {
+              "key": "auto_deleted",
+              "value": "off"
+            },
+            {
+              "key": "delivery_mode",
+              "value": "0"
+            },
+            {
+              "key": "publisher_confirms",
+              "value": "off"
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            }
+          ]
+        },
+        "notify_elasticsearch": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "url",
+              "value": ""
+            },
+            {
+              "key": "format",
+              "value": "namespace"
+            },
+            {
+              "key": "index",
+              "value": ""
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            },
+            {
+              "key": "username",
+              "value": ""
+            },
+            {
+              "key": "password",
+              "value": ""
+            }
+          ]
+        },
+        "notify_kafka": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "topic",
+              "value": ""
+            },
+            {
+              "key": "brokers",
+              "value": ""
+            },
+            {
+              "key": "sasl_username",
+              "value": ""
+            },
+            {
+              "key": "sasl_password",
+              "value": ""
+            },
+            {
+              "key": "sasl_mechanism",
+              "value": "plain"
+            },
+            {
+              "key": "client_tls_cert",
+              "value": ""
+            },
+            {
+              "key": "client_tls_key",
+              "value": ""
+            },
+            {
+              "key": "tls_client_auth",
+              "value": "0"
+            },
+            {
+              "key": "sasl",
+              "value": "off"
+            },
+            {
+              "key": "tls",
+              "value": "off"
+            },
+            {
+              "key": "tls_skip_verify",
+              "value": "off"
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "version",
+              "value": ""
+            }
+          ]
+        },
+        "notify_mqtt": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "broker",
+              "value": ""
+            },
+            {
+              "key": "topic",
+              "value": ""
+            },
+            {
+              "key": "password",
+              "value": ""
+            },
+            {
+              "key": "username",
+              "value": ""
+            },
+            {
+              "key": "qos",
+              "value": "0"
+            },
+            {
+              "key": "keep_alive_interval",
+              "value": "0s"
+            },
+            {
+              "key": "reconnect_interval",
+              "value": "0s"
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            }
+          ]
+        },
+        "notify_mysql": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "format",
+              "value": "namespace"
+            },
+            {
+              "key": "dsn_string",
+              "value": ""
+            },
+            {
+              "key": "table",
+              "value": ""
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            },
+            {
+              "key": "max_open_connections",
+              "value": "2"
+            }
+          ]
+        },
+        "notify_nats": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "address",
+              "value": ""
+            },
+            {
+              "key": "subject",
+              "value": ""
+            },
+            {
+              "key": "username",
+              "value": ""
+            },
+            {
+              "key": "password",
+              "value": ""
+            },
+            {
+              "key": "token",
+              "value": ""
+            },
+            {
+              "key": "tls",
+              "value": "off"
+            },
+            {
+              "key": "tls_skip_verify",
+              "value": "off"
+            },
+            {
+              "key": "cert_authority",
+              "value": ""
+            },
+            {
+              "key": "client_cert",
+              "value": ""
+            },
+            {
+              "key": "client_key",
+              "value": ""
+            },
+            {
+              "key": "ping_interval",
+              "value": "0"
+            },
+            {
+              "key": "streaming",
+              "value": "off"
+            },
+            {
+              "key": "streaming_async",
+              "value": "off"
+            },
+            {
+              "key": "streaming_max_pub_acks_in_flight",
+              "value": "0"
+            },
+            {
+              "key": "streaming_cluster_id",
+              "value": ""
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            }
+          ]
+        },
+        "notify_nsq": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "nsqd_address",
+              "value": ""
+            },
+            {
+              "key": "topic",
+              "value": ""
+            },
+            {
+              "key": "tls",
+              "value": "off"
+            },
+            {
+              "key": "tls_skip_verify",
+              "value": "off"
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            }
+          ]
+        },
+        "notify_postgres": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "format",
+              "value": "namespace"
+            },
+            {
+              "key": "connection_string",
+              "value": ""
+            },
+            {
+              "key": "table",
+              "value": ""
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            },
+            {
+              "key": "max_open_connections",
+              "value": "2"
+            }
+          ]
+        },
+        "notify_redis": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "format",
+              "value": "namespace"
+            },
+            {
+              "key": "address",
+              "value": ""
+            },
+            {
+              "key": "key",
+              "value": ""
+            },
+            {
+              "key": "password",
+              "value": ""
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            }
+          ]
+        },
+        "notify_webhook": {
+          "_": [
+            {
+              "key": "enable",
+              "value": "off"
+            },
+            {
+              "key": "endpoint",
+              "value": ""
+            },
+            {
+              "key": "auth_token",
+              "value": ""
+            },
+            {
+              "key": "queue_limit",
+              "value": "0"
+            },
+            {
+              "key": "queue_dir",
+              "value": ""
+            },
+            {
+              "key": "client_cert",
+              "value": ""
+            },
+            {
+              "key": "client_key",
+              "value": ""
+            }
+          ]
+        },
+        "policy_opa": {
+          "_": [
+            {
+              "key": "url",
+              "value": ""
+            },
+            {
+              "key": "auth_token",
+              "value": ""
+            }
+          ]
+        },
+        "region": {
+          "_": [
+            {
+              "key": "name",
+              "value": "eu-central-1"
+            }
+          ]
+        },
+        "scanner": {
+          "_": [
+            {
+              "key": "delay",
+              "value": "10"
+            },
+            {
+              "key": "max_wait",
+              "value": "15s"
+            },
+            {
+              "key": "cycle",
+              "value": "1m"
+            }
+          ]
+        },
+        "site": {
+          "_": [
+            {
+              "key": "name",
+              "value": ""
+            },
+            {
+              "key": "region",
+              "value": ""
+            }
+          ]
+        },
+        "storage_class": {
+          "_": null
+        },
+        "subnet": {
+          "_": [
+            {
+              "key": "license",
+              "value": ""
+            },
+            {
+              "key": "api_key",
+              "value": ""
+            }
+          ]
+        }
+      }
+    },
+    "info": {
+      "mode": "online",
+      "region": "eu-central-1",
+      "deploymentID": "c41de7d3-315c-44a2-b77f-50adc108aa9d",
+      "buckets": {
+        "count": 1
+      },
+      "objects": {
+        "count": 14
+      },
+      "usage": {
+        "size": 20302653
+      },
+      "services": {
+        "kms": {
+          "status": "disabled"
+        },
+        "ldap": {}
+      },
+      "backend": {
+        "backendType": "FS"
+      },
+      "servers": [
+        {
+          "state": "online",
+          "endpoint": "server1",
+          "uptime": 57,
+          "version": "2022-01-27T03:53:02Z",
+          "commitID": "9a6e56941274ed78a0828e4de863f339f4ac09fa",
+          "network": {
+            "server1": "online"
+          },
+          "drives": [
+            {
+              "path": "/data",
+              "state": "ok",
+              "totalspace": 511428861952,
+              "usedspace": 293004476416,
+              "availspace": 218424385536,
+              "pool_index": 0,
+              "set_index": 0,
+              "disk_index": 0
+            }
+          ],
+          "mem_stats": {
+            "Alloc": 182966416,
+            "TotalAlloc": 403041864,
+            "Mallocs": 566102,
+            "Frees": 462555,
+            "HeapAlloc": 182966416
+          }
+        }
+      ],
+      "tls": {
+        "tls_enabled": false
+      },
+      "is_kubernetes": false,
+      "is_docker": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+version: '3'
+services:
+  minio-app:
+    container_name: minio-app
+    image: minio/minio:RELEASE.2022-01-27T03-53-02Z
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: "MR_ROBOT_IS_ALIVE"
+      MINIO_ROOT_PASSWORD: "MR_ROBOT_SECRET_PASS"
+    volumes:
+      - C:\Users\selcu\OneDrive\Masaüstü\Turk-Telekom\paas\s3-app\minio-app:/data
+    ports:
+      - 9000:9000
+      - 9001:9001
+    networks:
+      - my-network
+  python-app:
+    build: .
+    container_name: python-app
+    environment:
+      S3_REGION: "eu-central-1"
+      ACCESS_KEY: 'MY_APP_SUPER_ACCESS'
+      SECRET_KEY: 'MY_APP_SUPER_SECRET'
+      S3_ENDPOINT: "http://minio-app:9000"
+      BUCKET_NAME: "mybucket1"
+      UPLOAD_FOLDER: ""
+    ports:
+      - 5000:5000
+    depends_on:
+      - minio-app
+    volumes:
+      - C:\Users\selcu\OneDrive\Masaüstü\Turk-Telekom\paas\s3-app:/s3-app
+    networks:
+      - my-network
+networks:
+  my-network:
+    driver: bridge
